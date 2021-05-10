@@ -8,4 +8,8 @@ const hotelSwiper = new Swiper('.hotel-slider', {
     prevEl: '.hotel-slider__button--prev',
   },
   speed: 600,
+
+  keyboard: {
+    enabled: true,
+  }
 });
