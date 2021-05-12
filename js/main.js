@@ -16,22 +16,22 @@ const hotelSwiper = new Swiper('.hotel-slider', {
 
 // ymaps.ready(init);
 
-// function init() {
-//     var map = new ymaps.Map("map", {
-//             center: [7.890689916012718,98.29477115090043],
-//             zoom: 16,
-//             controls: ['zoomControl'],
-//             behaviors: ['drag']
-//     });
+function init() {
+    var map = new ymaps.Map("map", {
+            center: [7.890689916012718,98.29477115090043],
+            zoom: 16,
+            controls: ['zoomControl'],
+            behaviors: ['drag']
+    });
 
-//     var Placemark = new ymaps.Placemark([7.890689916012718,98.29477115090043], {
+    var Placemark = new ymaps.Placemark([7.890689916012718,98.29477115090043], {
 
-//     },
-//     {
-//       iconLayout: 'default#image',
-//       iconImageHref: 'img/icon-hotel.png',
-//       iconImageSize: [40, 40]
-//     });
+    },
+    {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/icon-hotel.png',
+      iconImageSize: [40, 40]
+    });
 
-//     map.geoObjects.add(Placemark);
-//   }
+    map.geoObjects.add(Placemark);
+  }
