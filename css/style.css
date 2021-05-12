@@ -872,6 +872,9 @@ template {
   .map {
     width: 100%;
   }
+  .map__iframe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
