@@ -4,7 +4,8 @@
   .hotel-slider
     width: 600px
 @media (max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -28,6 +29,7 @@
       width: 340px
   .hotel
     padding-top: 25px
+    padding-bottom: 58px
     &-grid
       flex-direction: column
     &-slider
@@ -43,6 +45,8 @@
       margin-top: 2px
   .map
     width: 340px
+  .newsletter
+    padding: 73px 0 78px 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -100,7 +104,12 @@
     width: 100%
     &__iframe
       width: 100%
-
+  .newsletter
+    &-wrapper
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -117,6 +126,7 @@
       padding-bottom: 15px
   .hotel
     padding-top: 2px
+    padding-bottom: 44px
     &-info
       padding-bottom: 39px
       &__stars
@@ -129,10 +139,32 @@
       height: 179px
       margin-bottom: 20px
     &-right
-      min-height: 440px
+      min-height: 400px
   .booking
-    padding-top: 28px
+    padding-top: 29px
+    &__pricetag
+      line-height: 35px
+    &__per-room
+      line-height: 9px
+    &__room
+      margin-top: 4px
     &__call-center
-      margin-bottom: 18px
+      margin-top: 12px
+      margin-bottom: 17px
     &__number
       margin-right: 5px
+  .map
+    height: 173px
+  .newsletter
+    padding-top: 59px
+    &__wrapper
+      margin-left: 20px
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 46px
+  .subscribe
+    min-width: 280px
+    margin-top: 18px
