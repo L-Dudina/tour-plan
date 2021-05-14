@@ -826,6 +826,122 @@ template {
   line-height: 15px;
 }
 
+.reviews {
+  padding: 40px 0 70px 0;
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.reviews-slider__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 730px;
+  margin: 45px auto 0;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 60px 30px 64px;
+}
+
+.reviews-slider__item::before {
+  content: '';
+  position: absolute;
+  left: 64px;
+  top: 13px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__item::after {
+  content: '';
+  position: absolute;
+  right: 60px;
+  top: 118px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.reviews-slider__button--prev {
+  background-image: url(../img/arrow-prev-secondary.svg);
+  left: 0;
+}
+
+.reviews-slider__button--next {
+  background-image: url(../img/arrow-next-secondary.svg);
+  right: 0;
+}
+
+.reviews-slider__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+
+.reviews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 9px;
+}
+
+.reviews-slider__username {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin-bottom: 10px;
+}
+
+.reviews-slider__date {
+  font-size: 10px;
+  line-height: 13px;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.reviews-slider__rating {
+  display: flex;
+  align-items: center;
+}
+
+.reviews-slider__text {
+  max-width: 537px;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1049,6 +1165,9 @@ template {
   .subscribe {
     min-width: 280px;
     margin-top: 18px;
+  }
+  .subscribe__input {
+    padding-left: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */

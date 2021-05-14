@@ -14,6 +14,22 @@ const hotelSwiper = new Swiper('.hotel-slider', {
   }
 });
 
+const reviewsSwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+  speed: 600,
+
+  keyboard: {
+    enabled: true,
+  }
+});
+
 // ymaps.ready(init);
 
 // function init() {
