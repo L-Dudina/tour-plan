@@ -25,8 +25,13 @@ input {
   color: #333333;
 }
 
-input::-webkit-input-placeholder, input:-moz-placeholder, input:-ms-input-placeholder {
+input::-webkit-input-placeholder, input:-ms-input-placeholder {
   color: #bdbdbd;
+}
+
+input:-moz-placeholder {
+  color: #bdbdbd;
+  opacity: 1;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1352,11 +1357,10 @@ template {
   }
   .activities__card:nth-child(2) {
     order: 1;
-    margin-top: 10px;
+    margin-top: 9px;
   }
   .activities__card:nth-child(4) {
     order: 2;
-    margin-top: 1px;
   }
   .card {
     width: 100%;
