@@ -65,6 +65,9 @@
           left: 0
         &--next
           right: 0
+      &__text
+        max-height: 134px
+        overflow-y: auto
   .activities
     padding-top: 30px
     &-wrapper
@@ -103,7 +106,6 @@
         background-color: $text-color
   .stars
     flex-basis: auto
-
   .hotel
     &-name
       flex-basis: 100%
@@ -162,6 +164,10 @@
   .reviews
     &__title
       font-size: 24px
+    &-slider
+      &__text
+        max-height: 145px
+        overflow-y: auto
 @media ( max-width: 480px)
   .container
     max-width: 88%
@@ -236,6 +242,8 @@
         &--next
           margin-right: -88px
       &__text
+        max-height: 266px
+        overflow-y: auto
         text-align: left
         margin-left: 2px
   .activities

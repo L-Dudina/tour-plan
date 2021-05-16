@@ -47,9 +47,13 @@
       background-size: 32px
       background-position: center
       border: none
+      outline: none
       background-color: transparent
       cursor: pointer
       z-index: 99
+      &:hover
+        border: 1px solid #bdbdbd
+        border-radius: 4px
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
         left: 18px
@@ -80,11 +84,13 @@
       color: #000
       margin-bottom: 4px
     &__text
+      max-height: 120px
       max-width: 537px
       font-size: 12px
       line-height: 160%
       text-align: justify
       margin: auto
+      overflow-y: auto
     &__rating
       display: flex
       align-items: center

@@ -63,6 +63,10 @@
       background-position: center
       background-size: 10px
       background-color: transparent
+      &:hover
+        border: 1px solid #fdfbf8
+        border-radius: 4px
+        opacity: 0.7
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
@@ -165,6 +169,8 @@
     font-weight: 600
     font-size: 18px
     line-height: 25px
+    &:hover
+      opacity: 0.5
   &__num
     margin-left: 8px
   &__button
@@ -178,6 +184,13 @@
     border: none
     color: $light
     cursor: pointer
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+    background-position: 100% 0
+    background-size: 200% 100%
+    transition: all .25s ease-in
+    &:hover
+      background-position: 0 0
+      box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
 .map
   width: 347px
   height: 213px
