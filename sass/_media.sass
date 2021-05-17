@@ -261,3 +261,98 @@
   .card
     width: 100%
     min-height: 255px
+@media (hover: hover) and (pointer: fine)
+  .navbar
+    &-menu
+      &__link
+        display: inline-block
+        overflow: hidden
+        padding: 10px 0
+
+        &::before, &::after
+          content: ''
+          position: absolute
+          top: calc(100% - 4px)
+          width: 50%
+          height: 4px
+          opacity: .8
+          transition: .5s
+
+        &::before
+          left: -50%
+          background: $primary
+
+        &::after
+          left: 100%
+          background: $light
+
+        &:hover
+          color: $primary
+          &::before
+            left: 50%
+
+          &::after
+            left: 0
+  .search
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+  .user
+    &__name
+      &:hover
+        color: $primary
+        opacity: 0.6
+
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: #bdbdbd
+          opacity: 0.8
+  .hotel
+    &-slider
+      &__button
+        &:hover
+          border: 1px solid #fdfbf8
+          border-radius: 4px
+          opacity: 0.7
+  .booking
+    &__number
+      &:hover
+        opacity: 0.5
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+  .subscribe
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+  .reviews
+    &-slider
+      &__button
+        &:hover
+          border: 1px solid #bdbdbd
+          border-radius: 4px
+  .card
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)

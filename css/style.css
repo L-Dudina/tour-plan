@@ -411,41 +411,6 @@ template {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
-  display: inline-block;
-  overflow: hidden;
-  padding: 10px 0;
-}
-
-.navbar-menu__link::before, .navbar-menu__link::after {
-  content: '';
-  position: absolute;
-  top: calc(100% - 4px);
-  width: 50%;
-  height: 4px;
-  opacity: .8;
-  transition: .5s;
-}
-
-.navbar-menu__link::before {
-  left: -50%;
-  background: #EC1F46;
-}
-
-.navbar-menu__link::after {
-  left: 100%;
-  background: #fff;
-}
-
-.navbar-menu__link:hover {
-  color: #EC1F46;
-}
-
-.navbar-menu__link:hover::before {
-  left: 50%;
-}
-
-.navbar-menu__link:hover::after {
-  left: 0;
 }
 
 .logo {
@@ -481,15 +446,6 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
-  background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all .25s ease-in;
-}
-
-.search__button:hover {
-  background-position: 0 0;
-  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 
 .user {
@@ -510,11 +466,6 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
-}
-
-.user__name:hover {
-  color: #EC1F46;
-  opacity: 0.6;
 }
 
 .breadcrumb-list {
@@ -539,11 +490,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
-}
-
-.breadcrumb-list__link:hover {
-  color: #bdbdbd;
-  opacity: 0.8;
 }
 
 .hotel {
@@ -635,12 +581,6 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
-}
-
-.hotel-slider__button:hover {
-  border: 1px solid #fdfbf8;
-  border-radius: 4px;
-  opacity: 0.7;
 }
 
 .hotel-slider__button--next {
@@ -791,10 +731,6 @@ template {
   line-height: 25px;
 }
 
-.booking__number:hover {
-  opacity: 0.5;
-}
-
 .booking__num {
   margin-left: 8px;
 }
@@ -810,15 +746,6 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
-  background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all .25s ease-in;
-}
-
-.booking__button:hover {
-  background-position: 0 0;
-  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 
 .map {
@@ -905,14 +832,6 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all .25s ease-in;
-}
-
-.subscribe__button:hover {
-  background-position: 0 0;
 }
 
 .reviews {
@@ -977,11 +896,6 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
-}
-
-.reviews-slider__button:hover {
-  border: 1px solid #bdbdbd;
-  border-radius: 4px;
 }
 
 .reviews-slider__button--prev {
@@ -1116,15 +1030,6 @@ template {
   border: none;
   background-color: #EC1F46;
   border-radius: 4px;
-  background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all .25s ease-in;
-}
-
-.card__button:hover {
-  background-position: 0 0;
-  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 
 @media (max-width: 1200px) {
@@ -1469,6 +1374,99 @@ template {
   .card {
     width: 100%;
     min-height: 255px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar-menu__link {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  .navbar-menu__link::before, .navbar-menu__link::after {
+    content: '';
+    position: absolute;
+    top: calc(100% - 4px);
+    width: 50%;
+    height: 4px;
+    opacity: .8;
+    transition: .5s;
+  }
+  .navbar-menu__link::before {
+    left: -50%;
+    background: #EC1F46;
+  }
+  .navbar-menu__link::after {
+    left: 100%;
+    background: #fff;
+  }
+  .navbar-menu__link:hover {
+    color: #EC1F46;
+  }
+  .navbar-menu__link:hover::before {
+    left: 50%;
+  }
+  .navbar-menu__link:hover::after {
+    left: 0;
+  }
+  .search__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .search__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+  .user__name:hover {
+    color: #EC1F46;
+    opacity: 0.6;
+  }
+  .breadcrumb-list__link:hover {
+    color: #bdbdbd;
+    opacity: 0.8;
+  }
+  .hotel-slider__button:hover {
+    border: 1px solid #fdfbf8;
+    border-radius: 4px;
+    opacity: 0.7;
+  }
+  .booking__number:hover {
+    opacity: 0.5;
+  }
+  .booking__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .booking__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+  .subscribe__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .subscribe__button:hover {
+    background-position: 0 0;
+  }
+  .reviews-slider__button:hover {
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+  }
+  .card__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .card__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   }
 }
 /*# sourceMappingURL=style.css.map */
