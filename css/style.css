@@ -773,7 +773,6 @@ template {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-  align-items: space-between;
 }
 
 .packages-card {
