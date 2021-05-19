@@ -1,5 +1,5 @@
 .packages
-  padding: 40px 0 70px 0
+  padding: 40px 0 69px 0
   &__title
     font-weight: 700
     font-size: 36px
@@ -10,59 +10,61 @@
     margin-bottom: 65px
 .grid-container
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
-  align-items: space-between
+  // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+  // align-items: space-between
   grid-gap: 2rem
-  // grid-template-columns: repeat(3, 350px)
-  // grid-template-rows: repeat(2, 1fr)
+  grid-template-columns: repeat(3, 1fr)
+  align-items: space-between
   // grid-column-gap: 30px
   // grid-row-gap: 30px
 .packages-card
   position: relative
-  display: flex
-  flex-wrap: wrap
-  width: 350px
-  min-height: 500px
+  background-color: $dark
+  color: $light
   border-radius: 8px
   overflow: hidden
-
   &--first
     grid-column: span 2
     display: flex
-    width: 730px
-    min-height: 500px
-
-  &__picture
-    width: 350px
-    height: 250px
-    &--first
-      width: 366px
-      height: 500px
-  &__reserve
-    width: 350px
-    height: 250px
-    background-color: $dark
-    color: $light
-    padding: 30px 21px 25px 32px
-    // border-top-right-radius: 8px
-    // border-bottom-right-radius: 8px
-    &--first
-      width: 364px
-      height: 500px
-      padding: 41px 21px 30px 43px
+  &__offer
+    position: absolute
+    top: 27px
+    left: 0
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    background-color: $primary
+    padding: 8px 22px 7px 11px
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px
+    &--text
+      font-size: 8px
+      line-height: 10px
+      padding: 4px 9px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
 .reserve
+  padding: 30px 21px 25px 32px
+  &--first
+    padding: 41px 21px 30px 44px
   &__rating
     display: table
   &__title
     font-weight: 700
     font-size: 18px
     line-height: 23px
-    margin-bottom: 27px
   &__info
     font-weight: 400
     font-size: 14px
     line-height: 160.6%
+    margin-top: 26px
     margin-bottom: 34px
+    max-height: 165px
+    overflow-y: auto
   &__text
     margin-top: 24px
   &__place
@@ -72,27 +74,25 @@
     font-size: 12px
     line-height: 15px
     margin-left: 5px
+  &__order
+    display: flex
+    justify-content: space-between
   &__price
     display: flex
     flex-direction: column
-    margin-top: 24px
-    margin-bottom: 35px
-    &--first
-      margin-top: 37px
-    &--old
+    // margin-top: 24px
+    // margin-bottom: 35px
+    &-old
       font-weight: 400
       font-size: 14px
       line-height: 18px
       text-decoration: line-through
       margin-bottom: 5px
-    &--new
+    &-new
       font-weight: 700
       font-size: 24px
       line-height: 30px
   &__button
-    position: absolute
-    bottom: 30px
-    right: 21px
     font-family: 'Nunito', sans-serif
     font-weight: 600
     font-size: 14px
@@ -102,27 +102,6 @@
     border: none
     background-color: $primary
     border-radius: 4px
-.offer
-  &__picture
-    position: absolute
-    top: 27px
-    left: 0
-    font-weight: 600
-    font-size: 12px
-    line-height: 15px
-    padding: 8px 22px 7px 11px
-    border-top-left-radius: 0
-    border-bottom-left-radius: 0
-    border-top-right-radius: 4px
-    border-bottom-right-radius: 4px
-    &--mini
-      font-size: 8px
-      line-height: 10px
-      padding: 4px 9px
-.picture
-  &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
+    margin-top: 10px
 .rating-img
   margin: 1px

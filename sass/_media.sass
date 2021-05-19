@@ -77,6 +77,8 @@
   .card
     width: 339px
     height: 255px
+  .grid-container
+    grid-template-columns: repeat(2, 1fr)
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -158,6 +160,13 @@
   .card
     width: 49%
     height: 255px
+  .grid-container
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+  .packages-card
+    &--first
+      grid-column: 1
+      display: block
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -261,6 +270,10 @@
   .card
     width: 100%
     min-height: 255px
+  .reserve
+    &__info
+      max-height: 230px
+      overflow-y: auto
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
