@@ -396,7 +396,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 20px 0;
+  padding: 31px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -755,6 +755,171 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: space-between;
+  grid-gap: 2rem;
+}
+
+.packages-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  min-height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages-card--first {
+  grid-column: span 2;
+  display: flex;
+  width: 730px;
+  min-height: 500px;
+}
+
+.packages-card__picture {
+  width: 350px;
+  height: 250px;
+}
+
+.packages-card__picture--first {
+  width: 366px;
+  height: 500px;
+}
+
+.packages-card__reserve {
+  width: 350px;
+  height: 250px;
+  background-color: #0A223D;
+  color: #fff;
+  padding: 30px 21px 25px 32px;
+}
+
+.packages-card__reserve--first {
+  width: 364px;
+  height: 500px;
+  padding: 41px 21px 30px 43px;
+}
+
+.reserve__rating {
+  display: table;
+}
+
+.reserve__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 27px;
+}
+
+.reserve__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 34px;
+}
+
+.reserve__text {
+  margin-top: 24px;
+}
+
+.reserve__place {
+  margin-bottom: 11px;
+}
+
+.reserve__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 5px;
+}
+
+.reserve__price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 35px;
+}
+
+.reserve__price--first {
+  margin-top: 37px;
+}
+
+.reserve__price--old {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.reserve__price--new {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.reserve__button {
+  position: absolute;
+  bottom: 30px;
+  right: 21px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  padding: 11px 27px 10px 26px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+}
+
+.offer__picture {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 22px 7px 11px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.offer__picture--mini {
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px;
+}
+
+.picture__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating-img {
+  margin: 1px;
+}
+
 .newsletter {
   position: relative;
   padding: 80px 0 66px 0;
@@ -1022,6 +1187,7 @@ template {
 }
 
 .card__button {
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -1378,6 +1544,9 @@ template {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .navbar-menu {
+    padding: 20px 0;
+  }
   .navbar-menu__link {
     display: inline-block;
     overflow: hidden;
@@ -1465,6 +1634,16 @@ template {
     transition: all .25s ease-in;
   }
   .card__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+  .reserve__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .reserve__button:hover {
     background-position: 0 0;
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   }

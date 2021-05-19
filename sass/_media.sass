@@ -264,6 +264,7 @@
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
+      padding: 20px 0
       &__link
         display: inline-block
         overflow: hidden
@@ -348,6 +349,15 @@
           border: 1px solid #bdbdbd
           border-radius: 4px
   .card
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+  .reserve
     &__button
       background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
       background-position: 100% 0
