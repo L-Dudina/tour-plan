@@ -811,8 +811,13 @@ template {
 
 .packages-card__image {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
+}
+
+.packages-card__image--first {
+  width: 366px;
+  height: 100%;
 }
 
 .reserve {
@@ -1390,9 +1395,14 @@ template {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
+  .packages-card {
+    width: 100%;
+    height: 500px;
+  }
   .packages-card--first {
     grid-column: 1;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
