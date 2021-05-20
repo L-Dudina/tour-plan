@@ -6,6 +6,10 @@
   .card
     width: 230px
     height: 230px
+  .packages-card
+    &__picture
+      &--first
+        max-height: 510px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -305,8 +309,21 @@
     min-height: 255px
 @media ( max-width: 380px)
   .packages-card
+    min-height: 450px
     &__image
       height: 250px
+  .reserve
+    padding: 20px 15px 20px 20px
+    &__info
+      margin-top: 15px
+      margin-bottom: 25px
+    &__text
+      margin-top: 13px
+    &__place
+      margin-bottom: 5px
+    &__order
+      &--first
+        margin-top: 25px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu

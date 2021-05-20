@@ -812,7 +812,7 @@ template {
 .packages-card__picture--first {
   width: 50%;
   flex-shrink: 0;
-  max-height: 510px;
+  max-height: 500px;
 }
 
 .packages-card__image {
@@ -1203,6 +1203,9 @@ template {
     width: 230px;
     height: 230px;
   }
+  .packages-card__picture--first {
+    max-height: 510px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1591,8 +1594,27 @@ template {
 }
 
 @media (max-width: 380px) {
+  .packages-card {
+    min-height: 450px;
+  }
   .packages-card__image {
     height: 250px;
+  }
+  .reserve {
+    padding: 20px 15px 20px 20px;
+  }
+  .reserve__info {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .reserve__text {
+    margin-top: 13px;
+  }
+  .reserve__place {
+    margin-bottom: 5px;
+  }
+  .reserve__order--first {
+    margin-top: 25px;
   }
 }
 
