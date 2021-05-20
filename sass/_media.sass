@@ -48,6 +48,12 @@
       margin-top: 2px
   .map
     width: 340px
+  .packages
+    padding-top: 40px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
   .newsletter
     padding: 73px 0 72px 0
   .reviews
@@ -135,6 +141,21 @@
     width: 100%
     &__iframe
       width: 100%
+  .grid-container
+    grid-template-columns: repeat(1, 1fr)
+  .packages-card
+    width: 100%
+    min-height: 700px
+    &--first
+      grid-column: 1
+      display: flex
+      flex-direction: column
+      height: 100%
+    &__picture
+      &--first
+        width: 100%
+    &__image
+      height: 500px
   .newsletter
     &-wrapper
       max-width: 576px
@@ -160,19 +181,18 @@
   .card
     width: 49%
     height: 255px
-  .grid-container
-    grid-template-columns: repeat(1, 1fr)
-    grid-template-rows: repeat(5, 1fr)
-  .packages-card
-    width: 100%
-    height: 500px
-    &--first
-      grid-column: 1
-      display: flex
-      flex-direction: column
 @media ( max-width: 576px)
   .logo
     width: 99px
+  .packages
+    padding: 35px 0 60px 0
+    &__title
+      font-size: 24px
+      margin-bottom: 30px
+  .packages-card
+    min-height: 500px
+    &__image
+      height: 430px
   .reviews
     &__title
       font-size: 24px
@@ -222,6 +242,16 @@
       margin-right: 5px
   .map
     height: 173px
+  .packages-card
+    &__image
+      height: 350px
+  .reserve
+    &__info
+      max-height: 230px
+      overflow-y: auto
+    &__price
+      &-new
+        font-size: 20px
   .newsletter
     padding-top: 59px
     padding-bottom: 83px
@@ -273,10 +303,10 @@
   .card
     width: 100%
     min-height: 255px
-  .reserve
-    &__info
-      max-height: 230px
-      overflow-y: auto
+@media ( max-width: 380px)
+  .packages-card
+    &__image
+      height: 250px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
@@ -350,6 +380,15 @@
       &:hover
         background-position: 0 0
         box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+  .reserve
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
   .subscribe
     &__button
       background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
@@ -365,15 +404,6 @@
           border: 1px solid #bdbdbd
           border-radius: 4px
   .card
-    &__button
-      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
-      background-position: 100% 0
-      background-size: 200% 100%
-      transition: all .25s ease-in
-      &:hover
-        background-position: 0 0
-        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
-  .reserve
     &__button
       background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
       background-position: 100% 0

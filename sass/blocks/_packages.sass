@@ -1,5 +1,5 @@
 .packages
-  padding: 40px 0 69px 0
+  padding: 40px 0 68px 0
   &__title
     font-weight: 700
     font-size: 36px
@@ -43,15 +43,19 @@
       font-size: 8px
       line-height: 10px
       padding: 4px 9px
+  &__picture
+    &--first
+      width: 50%
+      flex-shrink: 0
+      max-height: 510px
   &__image
     width: 100%
     height: 250px
     object-fit: cover
     &--first
-      width: 366px
       height: 100%
 .reserve
-  padding: 30px 21px 25px 32px
+  padding: 29px 21px 25px 32px
   &--first
     padding: 41px 21px 30px 44px
   &__rating
@@ -65,21 +69,24 @@
     font-size: 14px
     line-height: 160.6%
     margin-top: 26px
-    margin-bottom: 34px
+    margin-bottom: 41px
     max-height: 165px
     overflow-y: auto
   &__text
-    margin-top: 24px
+    margin-top: 17px
   &__place
-    margin-bottom: 11px
+    margin-bottom: 8px
   &__description
     font-weight: 400
     font-size: 12px
     line-height: 15px
-    margin-left: 5px
+    margin-left: 12px
   &__order
     display: flex
     justify-content: space-between
+    margin-top: 24px
+    &--first
+      margin-top: 37px
   &__price
     display: flex
     flex-direction: column
@@ -105,6 +112,6 @@
     border: none
     background-color: $primary
     border-radius: 4px
-    margin-top: 10px
+    margin-top: 18px
 .rating-img
   margin: 1px
