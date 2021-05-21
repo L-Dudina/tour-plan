@@ -1,5 +1,5 @@
 .packages
-  padding: 40px 0 68px 0
+  padding: 40px 0 70px 0
   &__title
     font-weight: 700
     font-size: 36px
@@ -7,22 +7,18 @@
     text-align: center
     text-transform: uppercase
     margin-top: 0
-    margin-bottom: 65px
+    margin-bottom: 66px
 .grid-container
   display: grid
-  // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
-  // align-items: space-between
-  grid-gap: 2rem
+  grid-gap: 30px
   grid-template-columns: repeat(3, 1fr)
-  // align-items: space-between
-  // grid-column-gap: 30px
-  // grid-row-gap: 30px
 .packages-card
   position: relative
   background-color: $dark
   color: $light
   border-radius: 8px
   overflow: hidden
+  max-height: 500px
   &--first
     grid-column: span 2
     display: flex
@@ -47,7 +43,7 @@
     &--first
       width: 50%
       flex-shrink: 0
-      max-height: 500px
+      // max-height: 500px
   &__image
     width: 100%
     height: 250px
@@ -57,7 +53,7 @@
 .reserve
   padding: 29px 21px 25px 32px
   &--first
-    padding: 41px 21px 30px 44px
+    padding: 40px 21px 30px 44px
   &__rating
     display: table
   &__title
