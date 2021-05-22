@@ -1347,6 +1347,13 @@ template {
   margin-bottom: 23px;
 }
 
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .footer__button {
   min-width: 160px;
   min-height: 50px;
@@ -1532,8 +1539,9 @@ template {
     padding-top: 72px;
   }
   .footer-wrapper {
-    grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-template-columns: 177px 19px 150px minmax(min-content, 1fr);
+    grid-row-gap: 49px;
+    grid-column-gap: 2px;
   }
   .footer__input {
     flex-basis: 49%;
@@ -1691,6 +1699,37 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__additional {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
+  }
   .footer__input {
     flex-basis: 100%;
   }
@@ -1719,37 +1758,6 @@ template {
   .reviews-slider__text {
     max-height: 145px;
     overflow-y: auto;
-  }
-  .footer-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .footer__logo {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .footer__social-network {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .footer__additional {
-    grid-row: 3;
-    grid-column: 1;
-  }
-  .footer__categories {
-    grid-row: 4;
-    grid-column: 1;
-  }
-  .footer__legal {
-    grid-row: 5;
-    grid-column: 1;
-  }
-  .footer__contact-details {
-    grid-row: 6;
-    grid-column: 1;
-  }
-  .footer__contact-form {
-    grid-row: 7;
-    grid-column: 1;
   }
 }
 
@@ -1868,6 +1876,7 @@ template {
   }
   .activities {
     padding-top: 9px;
+    padding-bottom: 39px;
   }
   .activities__title {
     font-size: 18px;
@@ -1885,8 +1894,58 @@ template {
     width: 100%;
     min-height: 255px;
   }
+  .footer {
+    padding-top: 67px;
+  }
+  .footer-wrapper {
+    grid-row-gap: 29px;
+  }
+  .footer__logo {
+    width: 97px;
+  }
+  .footer__social-network {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__title--inline {
+    margin-top: 11px;
+    margin-bottom: 21px;
+  }
+  .footer__title--mb-3 {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  .footer__social-links {
+    margin-left: 3px;
+  }
+  .footer__text {
+    margin-bottom: 20px;
+  }
+  .footer__icon {
+    margin-top: 5px;
+  }
+  .footer__icon-wrapper {
+    min-width: 28px;
+  }
+  .footer__message {
+    margin-bottom: 14px;
+  }
   .footer__bar {
+    margin-top: 18px;
     flex-wrap: wrap;
+  }
+  .footer__bar-item {
+    padding: 0 4px;
+  }
+  .footer__block {
+    display: grid;
+    grid-row-gap: 15px;
+  }
+  .footer__button {
+    grid-row: 2;
+  }
+  .footer__info {
+    grid-row: 1;
   }
 }
 
@@ -2018,6 +2077,10 @@ template {
   .card__button:hover {
     background-position: 0 0;
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+  .footer__link--icon:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
   }
   .footer__link:hover, .footer__contact-link:hover {
     color: #fff;
