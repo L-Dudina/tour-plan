@@ -10,6 +10,9 @@
     &__picture
       &--first
         max-height: 510px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -80,6 +83,7 @@
         overflow-y: auto
   .activities
     padding-top: 30px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -89,6 +93,41 @@
     height: 255px
   .grid-container
     grid-template-columns: repeat(2, 1fr)
+  .footer
+    padding-top: 72px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      width: 96px
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 /2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      justify-self: start
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__bar
+      justify-content: space-between
+      &-list
+        margin-right: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -185,6 +224,9 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -204,6 +246,32 @@
       &__text
         max-height: 145px
         overflow-y: auto
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
 @media ( max-width: 480px)
   .container
     max-width: 88%
@@ -307,6 +375,9 @@
   .card
     width: 100%
     min-height: 255px
+  .footer
+    &__bar
+      flex-wrap: wrap
 @media ( max-width: 380px)
   .packages-card
     min-height: 450px
@@ -429,3 +500,20 @@
       &:hover
         background-position: 0 0
         box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+  .footer
+    &__link,
+    &__contact-link
+      &:hover
+        color: $light
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+    &__bar
+      &-link
+        &:hover
+          color: $footer-text-color
