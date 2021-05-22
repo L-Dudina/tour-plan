@@ -2033,7 +2033,7 @@ template {
     min-height: 450px;
   }
   .packages-card--first {
-    min-height: 700px;
+    min-height: 730px;
   }
   .packages-card__image {
     height: 250px;
@@ -2160,7 +2160,7 @@ template {
     background-position: 0 0;
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   }
-  .footer__link--icon:hover {
+  .footer__social-icon:hover {
     opacity: 0.7;
     transform: scale(1.2);
   }
