@@ -1,4 +1,4 @@
-const hotelSwiper = new Swiper('.hotel-slider', {
+var hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -14,7 +14,7 @@ const hotelSwiper = new Swiper('.hotel-slider', {
   }
 });
 
-const reviewsSwiper = new Swiper('.reviews-slider', {
+var reviewsSwiper = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
 
@@ -32,6 +32,12 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
 
 $('.newsletter').parallax({imageSrc: './img/newsletter-bg.jpg'});
 
+var menuButton = document.querySelector(".menu-button"); 
+menuButton.addEventListener("click", function () {
+  document
+  .querySelector(".navbar-button")
+  .classList.toggle("navbar-button--visible");
+});
 // ymaps.ready(init);
 
 // function init() {
