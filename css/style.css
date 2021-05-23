@@ -1637,7 +1637,7 @@ template {
   body {
     padding-top: 78px;
   }
-  .navbar__mobile--fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -1649,6 +1649,8 @@ template {
   }
   .navbar__user--mobile--visible, .navbar__search--mobile--visible {
     display: flex;
+    max-height: 360px;
+    overflow-y: scroll;
   }
   .navbar__user {
     flex-direction: column;
@@ -1665,6 +1667,8 @@ template {
   }
   .navbar-button--visible {
     display: block;
+    max-height: 497px;
+    overflow-y: scroll;
   }
   .navbar-menu {
     flex-direction: column;
@@ -1695,6 +1699,9 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name {
+    margin-bottom: 11px;
   }
   .user__name--light {
     color: #fff;
@@ -1861,9 +1868,27 @@ template {
   .container {
     max-width: 88%;
   }
+  .navbar-button {
+    top: 70px;
+    padding-top: 20px;
+  }
+  .navbar-menu {
+    padding-top: 11px;
+  }
+  .navbar-menu__item--link {
+    margin-bottom: 16px;
+  }
+  .navbar__search {
+    width: 245px;
+    margin-left: 0px;
+    margin-bottom: 17px;
+  }
   .navbar-top {
     padding-top: 22px;
-    padding-bottom: 22px;
+    padding-bottom: 30px;
+  }
+  .user__name {
+    margin-bottom: 7px;
   }
   .breadcrumb-list {
     padding-top: 26px;
