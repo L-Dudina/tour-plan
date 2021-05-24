@@ -1429,6 +1429,19 @@ template {
   object-fit: cover;
 }
 
+.hotel__button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1728,6 +1741,9 @@ template {
   .hotel-info__offer {
     order: -1;
     margin-left: 0;
+  }
+  .hotel-info--back {
+    flex-direction: column;
   }
   .hotel-slider {
     height: 350px;
@@ -2188,6 +2204,16 @@ template {
     border: 1px solid #fdfbf8;
     border-radius: 4px;
     opacity: 0.7;
+  }
+  .hotel__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .hotel__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   }
   .booking__number:hover {
     opacity: 0.5;
