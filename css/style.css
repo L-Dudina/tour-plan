@@ -1665,11 +1665,11 @@ template {
   }
   .navbar-button--visible {
     display: block;
-    max-height: 360px;
     overflow-y: scroll;
   }
   .navbar-menu {
     flex-direction: column;
+    max-height: 470px;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -1871,6 +1871,7 @@ template {
     padding-top: 20px;
   }
   .navbar-menu {
+    min-height: 360px;
     padding-top: 11px;
   }
   .navbar-menu__item--link {
