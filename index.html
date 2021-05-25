@@ -186,7 +186,7 @@
                 </a>
               </div>
               <!-- /.call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -409,7 +409,7 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-          <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
+          <input type="text" class="subscribe__input" placeholder="Your email address" name="email" required />
           <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
@@ -593,7 +593,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" />
@@ -683,7 +683,7 @@
             <form action="send.php" method="POST" class="footer__form">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
               <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
-              <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__block">
                 <button class="button footer__button" type="submit">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -706,7 +706,27 @@
         <!-- /.footer__bar -->
       </div>
       <!-- /.container -->
-    </section>
+    </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close" /></a>
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required />
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+          <input type="text" class="input modal__input" placeholder="Email*" name="email" required />
+          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <div class="modal__block">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script> -->
     <script src="js/jquery.min.js"></script>

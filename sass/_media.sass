@@ -152,6 +152,19 @@
       margin-top: 50px
       &-list
         margin-right: 0
+  .modal
+    &__dialog
+      &--visible
+
+        padding-left: 35px
+        padding-right: 35px
+    // &__block
+    //   display: grid
+    //   grid-row-gap: 15px
+    // &__button
+    //   grid-row: 2
+    // &__info
+    //   grid-row: 1
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -324,6 +337,18 @@
         grid-column: 1
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      &--visible
+        padding-left: 25px
+        padding-right: 25px
+    &__block
+      display: grid
+      grid-row-gap: 15px
+    &__button
+      grid-row: 2
+    &__info
+      grid-row: 1
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -345,6 +370,10 @@
       &__text
         max-height: 145px
         overflow-y: auto
+  .modal
+    &__dialog
+      &--visible
+        min-width: 360px
 @media ( max-width: 480px)
   .container
     max-width: 88%
@@ -522,6 +551,10 @@
       grid-row: 2
     &__info
       grid-row: 1
+  .modal
+    &__dialog
+      &--visible
+        min-width: 280px
 @media (max-width: 455px)
   .packages-card
     &--first
@@ -684,3 +717,12 @@
       &-link
         &:hover
           color: $footer-text-color
+  .modal
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #6253e1 50%, #852D91, #F24645)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
