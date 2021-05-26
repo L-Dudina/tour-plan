@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,7 +20,12 @@
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
-            <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+            <img
+              src="img/horizontal-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo__image"
+              data-aos="zoom-out-down"
+            />
           </a>
 
           <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -210,7 +216,12 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="grid-container">
-          <div class="packages-card packages-card--first">
+          <div
+            class="packages-card packages-card--first"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="packages-card__picture packages-card__picture--first">
               <span class="packages-card__offer">Flash Offer</span>
               <img
@@ -260,7 +271,7 @@
             <!-- /.packages-card__reserve -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="packages-card__picture">
               <span class="packages-card__offer packages-card__offer--text">Flash Offer</span>
               <img src="img/package-2.jpg" alt="Hotel Blue Haven" class="packages-card__image" />
@@ -294,7 +305,13 @@
             <!-- /.packages-card__reserve -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div
+            class="packages-card"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+          >
             <div class="packages-card__picture">
               <span class="packages-card__offer packages-card__offer--text">Flash Offer</span>
               <img src="img/package-3.jpg" alt="Hotel Blue Haven" class="packages-card__image" />
@@ -328,7 +345,13 @@
             <!-- /.packages-card__reserve -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div
+            class="packages-card"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+          >
             <div class="packages-card__picture">
               <span class="packages-card__offer packages-card__offer--text">Flash Offer</span>
               <img src="img/package-4.jpg" alt="Hotel Blue Haven" class="packages-card__image" />
@@ -362,7 +385,13 @@
             <!-- /.packages-card__reserve -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div
+            class="packages-card"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+          >
             <div class="packages-card__picture">
               <span class="packages-card__offer packages-card__offer--text">Flash Offer</span>
               <img src="img/package-5.jpg" alt="Hotel Blue Haven" class="packages-card__image" />
@@ -601,7 +630,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" />
+          <img
+            src="img/vertical-logo.svg"
+            alt="Logo: Best Tour Plan"
+            class="logo footer__logo"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          />
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -770,6 +805,7 @@
     <script src="js/parallax.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
