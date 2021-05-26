@@ -119,14 +119,12 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="index.html" class="logo footer__logo">
-            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
-          </a>
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" />
           <div class="footer__list footer__categories">
-            <h2 class="footer__title">ALL CATEGORIES</h2>
+            <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -139,7 +137,7 @@
             </ul>
           </div>
           <div class="footer__list footer__additional">
-            <h2 class="footer__title">ADDITIONAL INFORMATION</h2>
+            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
@@ -151,7 +149,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__social-network">
-            <h2 class="footer__title footer__title--inline">Social Network</h2>
+            <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="https://ru-ru.facebook.com/" target="_blank" rel="nofollow noopener" class="footer__social-icon"
                 ><img src="img/facebook.svg" alt="Icon: facebook"
@@ -167,7 +165,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h2 class="footer__title">LEGAL INFORMATION</h2>
+            <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
@@ -177,7 +175,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h2 class="footer__title footer__title--details">Contact Details</h2>
+            <h3 class="footer__title footer__title--details">Contact Details</h3>
             <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
@@ -207,11 +205,29 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h1 class="footer__title footer__title--mb-3">Send us a message</h1>
-            <form action="#" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" />
-              <input type="text" class="input footer__input" placeholder="Phone Number*" />
-              <textarea class="footer__message" placeholder="Message"></textarea>
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  minlength="2"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  minlength="18"
+                  class="input footer__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
+              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__block">
                 <button class="button footer__button" type="submit">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -234,7 +250,7 @@
         <!-- /.footer__bar -->
       </div>
       <!-- /.container -->
-    </section>
+    </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script> -->
     <script src="js/jquery.min.js"></script>
