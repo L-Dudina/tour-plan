@@ -73,11 +73,11 @@ function closeModal(event) {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "The name should not be shorter than 2 letters"
+          minlength: "The name must be at least 2 letters"
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Your email address format of name@domain.com"
         },
         phone: {
           required: "Please enter your phone number",
