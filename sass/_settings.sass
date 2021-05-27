@@ -12,17 +12,20 @@ img
 
 button
   cursor: pointer
+
 input, textarea
   color: $text-color
-  &::-moz-placeholder, &:-moz-placeholder
+
+  &::placeholder
     color: #BDBDBD
-    opacity: 1
   &:-ms-input-placeholder
     color: #BDBDBD
   &::-webkit-input-placeholder
     color: #BDBDBD
-  &::placeholder
+  &::-moz-placeholder
     color: #BDBDBD
+    opacity: 1
+
 .input
   font-weight: 400
   font-size: 12px
