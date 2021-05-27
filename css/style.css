@@ -813,6 +813,7 @@ template {
 
 .packages {
   padding: 40px 0 70px 0;
+  overflow: hidden;
 }
 
 .packages__title {
